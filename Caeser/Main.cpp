@@ -41,6 +41,14 @@ int GetCypherValue()
 	int CypherValue;
 	cout << "Input your cypher value: ";
 	cin >> CypherValue;
+	while (cin.fail())
+	{
+		cout << endl << "Invalid entry, please enter a number." << endl;
+		cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cout << "Input your cypher value: ";
+		cin >> CypherValue;
+	}
 	cout << "Your cypher key was: " << CypherValue << "." << endl;
 	return CypherValue;
 }
@@ -63,6 +71,11 @@ string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage)
 		{
 			EncryptedMessage += ' ';
 		}
+
+		else
+		{
+			EncryptedMessage += InitialMessage[i];
+		}
 	}
 	//cout << "\n\nEncrypted message is: " << EncryptedMessage << endl;
 	return EncryptedMessage;
@@ -72,7 +85,7 @@ char EncryptLetter(int LengthOfMessage, int CypherKey, int PosInAlphabet)
 {
 	if (PosInAlphabet + CypherKey > 51)
 	{
-		return Alphabet[(PosInAlphabet + CypherKey) - 52];
+		return Alphabet[(PosInAlphabet + CypherKey)%52];
 	}
 	else
 	{
