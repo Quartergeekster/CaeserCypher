@@ -5,8 +5,6 @@
 
 using namespace std;
 
-//YOU TWAT YOU CURRENTLY HAVE ZERO ERROR CATCHING IN PLACE WHAT THE FUCK IS WRONG WITH YOU HOW ARE YOU THAT COCKING STUPID
-
 
 int main() {
 	Welcome();
@@ -72,7 +70,7 @@ string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage)
 			EncryptedMessage += ' ';
 		}
 
-		else
+		if (isdigit(InitialMessage[i]))
 		{
 			EncryptedMessage += InitialMessage[i];
 		}
