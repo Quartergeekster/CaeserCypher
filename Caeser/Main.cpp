@@ -11,7 +11,15 @@ int main() {
 	string InputText = GetMessage();
 	cout << "Your message was: " << InputText << endl;
 	char * InputArray = ConvertStringToChar(InputText);
-	int CypherKey = GetCypherValue();
+	int CypherKey = 0;
+	while (CypherKey <=0)
+	{
+		CypherKey = GetCypherValue();
+		if (CypherKey <= 0)
+		{
+			cout << "That is not a valid number, please enter a positive number\n";
+		}
+	}
 	string EncryptedMessage = EncryptMessage(InputArray, CypherKey, InputText.length());
 	cout << "Your encrypted message is: " << EncryptedMessage << endl;
 	cin.ignore();
@@ -51,7 +59,7 @@ int GetCypherValue()
 	return CypherValue;
 }
 
-string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage) //This will either need to return a string or a char
+string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage)
 {
 	string EncryptedMessage;
 	for (int i = 0; InitialMessage[i] != '\0'; i++)
