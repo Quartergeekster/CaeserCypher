@@ -61,9 +61,11 @@ int GetCypherValue()
 
 string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage)
 {
+	bool Replaced;
 	string EncryptedMessage;
 	for (int i = 0; InitialMessage[i] != '\0'; i++)
 	{
+		Replaced = false;
 		for (int j = 0; j<51 ; j++)
 		{
 			if (InitialMessage[i] == Alphabet[j])
@@ -71,16 +73,25 @@ string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage)
 				//cout << "Initial message letter " << InitialMessage[i] << " match found at Alphabet array position " << (j + 1) << "." << endl;
 				//cout << "Matched letter from alphabet was " << Alphabet[j] << "." << endl;
 				EncryptedMessage += EncryptLetter(LengthOfMessage, CypherKey, j);
+				Replaced = true;
 			}
 		}
 		if (isspace(InitialMessage[i]))
 		{
 			EncryptedMessage += ' ';
+			Replaced = true;
 		}
 
 		if (isdigit(InitialMessage[i]))
 		{
 			EncryptedMessage += InitialMessage[i];
+			Replaced = true;
+		}
+
+		if (Replaced == false)
+		{
+			EncryptedMessage += InitialMessage[i];
+			Replaced = true;
 		}
 	}
 	//cout << "\n\nEncrypted message is: " << EncryptedMessage << endl;
