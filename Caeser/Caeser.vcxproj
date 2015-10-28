@@ -65,6 +65,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="EncryptionFns.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseFns.h" />
