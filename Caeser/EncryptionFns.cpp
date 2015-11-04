@@ -1,4 +1,3 @@
-
 #pragma warning (disable: 4996)
 #include <iostream>
 #include <string>
@@ -9,14 +8,6 @@ char Alphabet[52] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'
 
 char EncryptLetter(int, int, int);
 
-string GetMessage(){
-	string message;
-	cout << "\n\nEnter your message here: ";
-	getline(cin, message);
-	cout << endl;
-	return message;
-}
-
 char * ConvertStringToChar(string Str)
 {
 	char * writable = new char[Str.size() + 1];
@@ -24,23 +15,6 @@ char * ConvertStringToChar(string Str)
 	writable[Str.size()] = '\0';
 	return writable;
 };
-
-int GetCypherValue()
-{
-	int CypherValue;
-	cout << "Input your cypher value: ";
-	cin >> CypherValue;
-	while (cin.fail())
-	{
-		cout << endl << "Invalid entry, please enter a number." << endl;
-		cin.clear();
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		cout << "Input your cypher value: ";
-		cin >> CypherValue;
-	}
-	cout << "Your cypher key was: " << CypherValue << "." << endl;
-	return CypherValue;
-}
 
 string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage)
 {

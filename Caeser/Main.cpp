@@ -15,10 +15,6 @@ int main() {
 	while (CypherKey <=0)
 	{
 		CypherKey = GetCypherValue();
-		if (CypherKey <= 0)
-		{
-			cout << "That is not a valid number, please enter a positive number\n";
-		}
 	}
 	string EncryptedMessage = EncryptMessage(InputArray, CypherKey, InputText.length());
 	cout << "Your encrypted message is: " << EncryptedMessage << endl;

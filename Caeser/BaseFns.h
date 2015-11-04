@@ -2,8 +2,6 @@
 using namespace std;
 
 
-
-
 void Welcome() {
 	cout << "\t\tWelcome to the Caeser cypher program\n\n\tA quick and easy method for encoding a message" << endl;
 };
