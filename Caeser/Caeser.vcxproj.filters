@@ -24,9 +24,18 @@
     <ClCompile Include="InputFns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CypherFns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DecryptionFns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseFns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CypherHead.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
