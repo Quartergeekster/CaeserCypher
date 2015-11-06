@@ -26,10 +26,10 @@ int GetCypherValue()
 		cout << "Input your cypher value: ";
 		cin >> CypherValue;
 	}
-	if (CypherValue <= 0)
-	{
-		cout << "That is not a valid number, please enter a positive number\n";
-	}
+	//if (CypherValue <= 0)
+	//{
+	//	cout << "That is not a valid number, please enter a positive number\n";
+	//}
 	cout << "Your cypher key was: " << CypherValue << "." << endl;
 	return CypherValue;
 }
