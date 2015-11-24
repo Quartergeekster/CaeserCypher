@@ -1,26 +1,18 @@
-﻿Build started 24/11/2015 13:21:23.
+﻿Build started 24/11/2015 13:52:30.
      1>Project "C:\Users\Robert\Documents\Visual Studio 2013\Projects\C++ practice\Test2\Caeser\CaeserCypher\Caeser\Caeser.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CypherFns.cpp DecryptionFns.cpp EncryptionFns.cpp InputFns.cpp Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
          Main.cpp
-         Generating Code...
-         Compiling...
-         CypherFns.cpp
-         Generating Code...
-         Compiling...
-         InputFns.cpp
-         EncryptionFns.cpp
-         DecryptionFns.cpp
-         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Robert\Documents\Visual Studio 2013\Projects\C++ practice\Test2\Caeser\CaeserCypher\Debug\Caeser.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Robert\Documents\Visual Studio 2013\Projects\C++ practice\Test2\Caeser\CaeserCypher\Debug\Caeser.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Robert\Documents\Visual Studio 2013\Projects\C++ practice\Test2\Caeser\CaeserCypher\Debug\Caeser.lib" /MACHINE:X86 Debug\Main.obj
          Debug\EncryptionFns.obj
          Debug\InputFns.obj
          Debug\CypherFns.obj
          Debug\DecryptionFns.obj
+         Debug\Menu.obj
          Caeser.vcxproj -> C:\Users\Robert\Documents\Visual Studio 2013\Projects\C++ practice\Test2\Caeser\CaeserCypher\Debug\Caeser.exe
      1>Done Building Project "C:\Users\Robert\Documents\Visual Studio 2013\Projects\C++ practice\Test2\Caeser\CaeserCypher\Caeser\Caeser.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.49
+Time Elapsed 00:00:01.04

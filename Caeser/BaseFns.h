@@ -3,7 +3,7 @@ using namespace std;
 
 
 void Welcome() {
-	cout << "\t\tWelcome to the Caeser cypher program\n\n\tA quick and easy method for encoding a message" << endl;
+	cout << "\t\tWelcome to the Caeser cypher program\n\n\tA quick and easy method for encoding a message\n" << endl;
 };
 
 string GetMessage();
@@ -15,3 +15,5 @@ int GetCypherValue();
 string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage);
 
 char EncryptLetter(int, int, int);
+
+int MenuChoice();
