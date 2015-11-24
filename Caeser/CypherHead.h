@@ -9,4 +9,3 @@ char * ConvertStringToChar(string Str);
 char EncryptLetter(int, int, int);
 
 string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage);
-

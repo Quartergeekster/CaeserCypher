@@ -5,15 +5,6 @@
 
 using namespace std;
 
-//char EncryptLetter(int LengthOfMessage, int CypherKey, int PosInAlphabet)
-//{
-//	if (PosInAlphabet + CypherKey > abs(51))
-//	{
-//		return Alphabet[(PosInAlphabet + CypherKey) % 52];
-//	}
-//	return Alphabet[PosInAlphabet + CypherKey];
-//}
-
 string EncryptMessage(char * InitialMessage, int CypherKey, int LengthOfMessage)
 {
 	bool Replaced;
