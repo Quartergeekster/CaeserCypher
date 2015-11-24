@@ -11,7 +11,7 @@ int main() {
 	cout << "Your message was: " << InputText << endl;
 	char * InputArray = ConvertStringToChar(InputText);
 	int CypherKey = 0;
-	if (CypherKey ==0)
+	while (CypherKey ==0)
 	{
 		CypherKey = GetCypherValue();
 	}
