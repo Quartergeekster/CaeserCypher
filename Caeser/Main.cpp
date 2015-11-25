@@ -15,6 +15,7 @@ int main() {
 		{
 		case(1) :
 			cout << "Case 1" << endl;
+			MainInput(choice);
 			break;
 		case(2) :
 			cout << "Case 2" << endl;
@@ -38,19 +39,7 @@ int main() {
 	//}
 	//string EncryptedMessage = EncryptMessage(InputArray, CypherKey, InputText.length());
 	//cout << "Your encrypted message is: " << EncryptedMessage << endl;
-	cin.ignore();
 	system("PAUSE");
 };
 
-int MainInput()
-{
-	string InputText = GetMessage();
-	char * InputArray = ConvertStringToChar(InputText);
-	int CypherKey = 0;
-	while (CypherKey ==0)
-	{
-		CypherKey = GetCypherValue();
-	}
-	return 0;
-}
 

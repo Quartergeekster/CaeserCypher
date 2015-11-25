@@ -70,6 +70,7 @@
     <ClCompile Include="CypherFns.cpp" />
     <ClCompile Include="DecryptionFns.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="InputControl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseFns.h" />
