@@ -4,14 +4,19 @@
 
 using namespace std;
 
-int MainInput(int choice)
+void MainInput(int choice)
 {
-	string InputText = GetMessage();
-	//char * InputArray = ConvertStringToChar(InputText);
-	//int CypherKey = 0;
-	//while (CypherKey == 0)
-	//{
-	//	CypherKey = GetCypherValue();
-	//}
-	return 0;
+	if (choice == 1)
+	{
+		int CypherKey = 0;
+		string ToBeEncrypted = GetMessage();
+		char * InputArray = ConvertStringToChar(ToBeEncrypted);
+		while (CypherKey == 0)
+		{
+			CypherKey = GetCypherValue();
+		}
+		string EncryptedMessage = EncryptMessage(InputArray, CypherKey, ToBeEncrypted.length());
+		cout << "\n" << endl;
+		cout << "your encrypted message is: " << EncryptedMessage << "\n\n" << endl;;
+	}
 }

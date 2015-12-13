@@ -16,6 +16,5 @@ char EncryptLetter(int, int, int);
 
 int MenuChoice();
 
-int MainInput(int choice);
-
+void MainInput(int choice);
 
